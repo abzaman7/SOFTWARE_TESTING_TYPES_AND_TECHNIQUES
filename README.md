@@ -6,6 +6,9 @@ This guide provides a structured overview of commonly used testing types, techni
 
 ---
 
+# Testing Types at a Glance
+
+---
 # 1. Functional Testing
 
 **Functional Testing** verifies that the software behaves according to its specified functional requirements.
