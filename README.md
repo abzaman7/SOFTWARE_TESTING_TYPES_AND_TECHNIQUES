@@ -8,7 +8,10 @@ This guide provides a structured overview of commonly used testing types, techni
 
 # Testing Types at a Glance
 
+<img src="https://github.com/abzaman7/SOFTWARE_TESTING_TYPES_AND_TECHNIQUES/blob/main/Classification-of-Software-testing-types.png" alt="Testing Types at a Glance" hight="700">
+
 ---
+
 # 1. Functional Testing
 
 **Functional Testing** verifies that the software behaves according to its specified functional requirements.
