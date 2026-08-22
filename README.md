@@ -6,6 +6,89 @@ This guide provides a structured overview of commonly used testing types, techni
 
 ---
 
+# Table of Contents
+
+1. [Software Testing Types](#software-testing-types)
+
+   * [Testing Categories Overview](#testing-categories-overview)
+
+2. [Functional Testing](#1-functional-testing)
+
+   * [Unit Testing](#11-unit-testing)
+
+     * [White Box Testing](#white-box-testing)
+     * [Gorilla Testing](#gorilla-testing)
+   * [Integration Testing](#2-integration-testing)
+
+     * [Top-Down Integration](#top-down-integration)
+     * [Bottom-Up Integration](#bottom-up-integration)
+     * [Incremental Integration](#incremental-integration)
+     * [Gray Box Testing](#gray-box-testing)
+   * [System Testing](#3-system-testing)
+
+     * [End-to-End Testing](#31-end-to-end-testing)
+     * [Black Box Testing](#32-black-box-testing)
+     * [Smoke Testing](#33-smoke-testing)
+     * [Sanity Testing](#34-sanity-testing)
+     * [Happy Path Testing](#35-happy-path-testing)
+     * [Monkey Testing](#36-monkey-testing)
+   * [Acceptance Testing](#4-acceptance-testing)
+
+     * [User Acceptance Testing (UAT)](#user-acceptance-testing-uat)
+     * [Alpha Testing](#41-alpha-testing)
+     * [Beta Testing](#42-beta-testing)
+     * [Operational Acceptance Testing (OAT)](#43-operational-acceptance-testing-oat)
+
+3. [Non-Functional Testing](#2-non-functional-testing)
+
+   * [Security Testing](#21-security-testing)
+
+     * [Penetration Testing](#penetration-testing)
+     * [Vulnerability Testing](#vulnerability-testing)
+   * [Performance Testing](#22-performance-testing)
+
+     * [Load Testing](#load-testing)
+     * [Stress Testing](#stress-testing)
+     * [Scalability Testing](#scalability-testing)
+     * [Volume Testing](#volume-testing)
+     * [Endurance Testing](#endurance-testing)
+   * [Usability Testing](#23-usability-testing)
+
+     * [Exploratory Testing](#exploratory-testing)
+     * [Cross-Browser Testing](#cross-browser-testing)
+     * [Accessibility Testing](#accessibility-testing)
+   * [Compatibility Testing](#24-compatibility-testing)
+
+     * [Browser Compatibility Testing](#browser-compatibility-testing)
+     * [Backward Compatibility Testing](#backward-compatibility-testing)
+
+4. [Other Important Testing Types](#3-other-important-testing-types)
+
+   * [Ad-Hoc Testing](#ad-hoc-testing)
+   * [Back-End Testing](#back-end-testing)
+   * [Boundary Value Analysis](#boundary-value-analysis)
+   * [Branch Testing](#branch-testing)
+   * [Comparison Testing](#comparison-testing)
+   * [Equivalence Partitioning](#equivalence-partitioning)
+   * [Example-Based Testing](#example-based-testing)
+   * [GUI Testing](#gui-testing)
+   * [Incremental Integration Testing](#incremental-integration-testing)
+   * [Installation Testing](#installation-testing)
+   * [Uninstallation Testing](#uninstallation-testing)
+   * [Mutation Testing](#mutation-testing)
+   * [Negative Testing](#negative-testing)
+   * [Recovery Testing](#recovery-testing)
+   * [Regression Testing](#regression-testing)
+   * [Risk-Based Testing (RBT)](#risk-based-testing-rbt)
+   * [Static Testing](#static-testing)
+   * [Vulnerability Testing](#vulnerability-testing)
+
+5. [Testing Types at a Glance](#testing-types-at-a-glance)
+
+6. [Final Takeaway](#final-takeaway)
+
+---
+
 # Testing Types at a Glance
 
 <img src="https://github.com/abzaman7/SOFTWARE_TESTING_TYPES_AND_TECHNIQUES/blob/main/Classification-of-Software-testing-types.png" alt="Testing Types at a Glance" hight="700">
@@ -1150,3 +1233,5 @@ At the same time, non-functional testing helps ensure that the application is no
 Ultimately, the goal of software testing is not simply to find bugs.
 
 > **The goal is to build confidence that the software is fit for its intended purpose.**
+
+
