@@ -8,11 +8,9 @@ This guide provides a structured overview of commonly used testing types, techni
 
 # Table of Contents
 
-1. [Software Testing Types](#software-testing-types)
+[Testing Types at a Glance](#Testing-Types-at-a-Glance)
 
-   * [Testing Types at a Glance](#Testing-Types-at-a-Glance)
-
-2. [Functional Testing](#1-functional-testing)
+1. [Functional Testing](#1-functional-testing)
 
    * [Unit Testing](#11-unit-testing)
 
@@ -39,7 +37,7 @@ This guide provides a structured overview of commonly used testing types, techni
      * [Beta Testing](#42-beta-testing)
      * [Operational Acceptance Testing (OAT)](#43-operational-acceptance-testing-oat)
 
-3. [Non-Functional Testing](#2-non-functional-testing)
+2. [Non-Functional Testing](#2-non-functional-testing)
 
    * [Security Testing](#21-security-testing)
 
@@ -62,7 +60,7 @@ This guide provides a structured overview of commonly used testing types, techni
      * [Browser Compatibility Testing](#browser-compatibility-testing)
      * [Backward Compatibility Testing](#backward-compatibility-testing)
 
-4. [Other Important Testing Types](#3-other-important-testing-types)
+3. [Other Important Testing Types](#3-other-important-testing-types)
 
    * [Ad-Hoc Testing](#ad-hoc-testing)
    * [Back-End Testing](#back-end-testing)
@@ -83,9 +81,9 @@ This guide provides a structured overview of commonly used testing types, techni
    * [Static Testing](#static-testing)
    * [Vulnerability Testing](#vulnerability-testing)
 
-5. [Testing Types at a Glance](#testing-types-at-a-glance)
+4. [Testing Types at a Glance](#testing-types-at-a-glance)
 
-6. [Final Takeaway](#final-takeaway)
+5. [Final Takeaway](#final-takeaway)
 
 ---
 
