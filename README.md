@@ -10,7 +10,7 @@ This guide provides a structured overview of commonly used testing types, techni
 
 1. [Software Testing Types](#software-testing-types)
 
-   * [Testing Categories Overview](#testing-categories-overview)
+   * [Testing Types at a Glance](#Testing-Types-at-a-Glance)
 
 2. [Functional Testing](#1-functional-testing)
 
