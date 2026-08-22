@@ -63,7 +63,7 @@ This guide provides a structured overview of commonly used testing types, techni
 3. [Other Important Testing Types](#3-other-important-testing-types)
 
    * [Ad-Hoc Testing](#ad-hoc-testing)
-   * [Back-End Testing](#back-end-testing)
+   * [Back-End / Database Testing](#Back-End-/-Database-Testing)
    * [Boundary Value Analysis](#boundary-value-analysis)
    * [Branch Testing](#branch-testing)
    * [Comparison Testing](#comparison-testing)
