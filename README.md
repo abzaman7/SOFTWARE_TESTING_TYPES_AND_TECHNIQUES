@@ -646,11 +646,11 @@ The following testing types and techniques are commonly used throughout differen
 
 ## Ad-Hoc Testing
 
-**Ad-Hoc Testing** is an informal testing approach performed without predefined test cases or detailed planning.
+**Ad hoc Testing** can also be understood as need-based testing. It involves testing specific components, features, or areas of the application based on current priorities, risks, or immediate business needs, without following a predefined test path or formal test plan. The tester relies on intuition, experience, and knowledge of the application to discover defects. The objective is often to quickly explore the application and uncover issues that may not be covered by existing test cases.
 
-The tester relies on intuition, experience, and knowledge of the application to discover defects.
+For example, if a critical feature or component requires immediate validation but was not originally included within the defined testing scope, the QA team may perform ad hoc testing to quickly assess its functionality and identify potential issues.
 
-The objective is often to quickly explore the application and uncover issues that may not be covered by existing test cases.
+Ad hoc testing is typically flexible and unscripted, allowing testers to focus on areas that require immediate attention based on changing project requirements, newly identified risks, production issues, or stakeholder priorities.
 
 ---
 
