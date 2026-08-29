@@ -1155,35 +1155,124 @@ The goal is to identify and address security weaknesses before they can cause ha
 
 # 4. Quick Reference
 
-| Testing Type          | Primary Focus                                |
-| --------------------- | -------------------------------------------- |
-| Unit Testing          | Individual components                        |
-| Integration Testing   | Communication between components             |
-| System Testing        | Complete system                              |
-| Acceptance Testing    | Business and customer acceptance             |
-| Smoke Testing         | Basic build stability                        |
-| Sanity Testing        | Specific changes or fixes                    |
-| Regression Testing    | Existing functionality after changes         |
-| Black Box Testing     | External behavior                            |
-| White Box Testing     | Internal logic and code                      |
-| Gray Box Testing      | Partial internal knowledge                   |
-| Security Testing      | Security and protection                      |
-| Performance Testing   | Speed, stability, and resource behavior      |
-| Load Testing          | Expected workload                            |
-| Stress Testing        | Beyond expected workload                     |
-| Scalability Testing   | Increasing workload                          |
-| Volume Testing        | Large amounts of data                        |
-| Endurance Testing     | Long-duration workload                       |
-| Usability Testing     | User experience and ease of use              |
-| Compatibility Testing | Different environments                       |
-| Accessibility Testing | Accessibility for users with different needs |
-| Exploratory Testing   | Learning and discovering defects             |
-| Negative Testing      | Invalid and unexpected inputs                |
-| Recovery Testing      | Recovery from failures                       |
-| Static Testing        | Defects without executing code               |
-| Mutation Testing      | Effectiveness of test cases                  |
-| Risk-Based Testing    | Testing based on risk                        |
-| Ad-Hoc Testing        | Unplanned exploratory testing                |
+A quick-reference guide to the testing types and techniques covered in this repository, organized in the same serial order for easy navigation.
+
+<!--
+| #         | Testing Type / Technique        | Primary Focus                                                       |
+| --------- | ------------------------------- | ------------------------------------------------------------------- |
+| **1**     | **Functional Testing**          | Verifies that software functions according to requirements          |
+| **1.1**   | Unit Testing                    | Individual functions, methods, classes, or components               |
+| **1.1.1** | White Box Testing               | Internal code structure, logic, and execution paths                 |
+| **1.1.2** | Gorilla Testing                 | Intensive testing of a specific module or functionality             |
+| **1.2**   | Integration Testing             | Communication and interaction between components                    |
+| **1.2.1** | Gray Box Testing                | Testing with partial knowledge of internal implementation           |
+| **1.3**   | System Testing                  | Complete integrated system against requirements                     |
+| **1.3.1** | End-to-End Testing              | Complete business workflows from beginning to end                   |
+| **1.3.2** | Black Box Testing               | External behavior without knowledge of internal implementation      |
+| **1.3.3** | Smoke Testing                   | Critical functionality and build stability                          |
+| **1.3.4** | Sanity Testing                  | Focused validation after specific changes or fixes                  |
+| **1.3.5** | Happy Path Testing              | Successful workflows using valid inputs                             |
+| **1.3.6** | Monkey Testing                  | Random or unexpected inputs and user behavior                       |
+| **1.4**   | Acceptance Testing              | Business acceptance and readiness for release                       |
+| **1.4.1** | Alpha Testing                   | Internal validation before external release                         |
+| **1.4.2** | Beta Testing                    | Validation by selected external users                               |
+| **1.4.3** | Operational Acceptance Testing  | Operational readiness, maintainability, and support                 |
+| **2**     | **Non-Functional Testing**      | Quality attributes such as performance, security, and usability     |
+| **2.1**   | Security Testing                | Security controls, vulnerabilities, and protection mechanisms       |
+| **2.1.1** | Penetration Testing             | Authorized security assessment through controlled attack simulation |
+| **2.2**   | Performance Testing             | System behavior under different workloads                           |
+| **2.2.1** | Load Testing                    | Performance under expected workload                                 |
+| **2.2.2** | Stress Testing                  | Behavior beyond expected capacity                                   |
+| **2.2.3** | Scalability Testing             | Ability to handle increasing workload                               |
+| **2.2.4** | Volume Testing                  | Handling of large volumes of data                                   |
+| **2.2.5** | Endurance Testing               | Stability during sustained long-term workload                       |
+| **2.3**   | Usability Testing               | Ease of use, navigation, and user experience                        |
+| **2.3.1** | Exploratory Testing             | Simultaneous learning, test design, and execution                   |
+| **2.3.2** | Cross-Browser Testing           | Consistent behavior across browsers and browser versions            |
+| **2.3.3** | Accessibility Testing           | Usability for people with different accessibility needs             |
+| **2.4**   | Compatibility Testing           | Behavior across different environments and configurations           |
+| **3.1**   | Ad-Hoc Testing                  | Flexible, unscripted testing based on immediate needs               |
+| **3.2**   | Back-End / Database Testing     | Data integrity, database operations, and backend logic              |
+| **3.3**   | Browser Compatibility Testing   | Web application compatibility across browsers                       |
+| **3.4**   | Backward Compatibility Testing  | Compatibility with older versions, data, APIs, or formats           |
+| **3.5**   | Boundary Value Analysis         | Values at and around input boundaries                               |
+| **3.6**   | Branch Testing                  | Execution of decision branches in source code                       |
+| **3.7**   | Comparison Testing              | Comparison against previous versions or alternatives                |
+| **3.8**   | Equivalence Partitioning        | Testing representative values from equivalent input groups          |
+| **3.9**   | Example-Based Testing           | Validation using realistic examples and scenarios                   |
+| **3.10**  | GUI Testing                     | User interface behavior, appearance, and interaction                |
+| **3.11**  | Incremental Integration Testing | Gradual integration and validation of components                    |
+| **3.12**  | Installation Testing            | Correct installation and post-installation behavior                 |
+| **3.13**  | Uninstallation Testing          | Correct removal of software and related components                  |
+| **3.14**  | Mutation Testing                | Evaluating the effectiveness of a test suite                        |
+| **3.15**  | Negative Testing                | Behavior with invalid, unexpected, or incorrect input               |
+| **3.16**  | Recovery Testing                | System recovery after failures or interruptions                     |
+| **3.17**  | Regression Testing              | Ensuring existing functionality remains unaffected by changes       |
+| **3.18**  | Risk-Based Testing              | Prioritizing testing according to risk                              |
+| **3.19**  | Static Testing                  | Finding defects without executing application code                  |
+| **3.20**  | Vulnerability Testing           | Identifying security weaknesses and vulnerabilities                 |
+-->
+---
+
+| #                                            | Testing Type / Technique            | Primary Focus                                                       |
+| -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------- |
+| [1](#1-functional-testing)                   | **Functional Testing**              | Verifies that software functions according to requirements          |
+| [1.1](#11-unit-testing)                      | **Unit Testing**                    | Individual functions, methods, classes, or components               |
+| [1.1.1](#111-white-box-testing)              | **White Box Testing**               | Internal code structure, logic, and execution paths                 |
+| [1.1.2](#112-gorilla-testing)                | **Gorilla Testing**                 | Intensive testing of a specific module or functionality             |
+| [1.2](#12-integration-testing)               | **Integration Testing**             | Communication and interaction between components                    |
+| [1.2.1](#121-gray-box-testing)               | **Gray Box Testing**                | Testing with partial knowledge of internal implementation           |
+| [1.3](#13-system-testing)                    | **System Testing**                  | Complete integrated system against requirements                     |
+| [1.3.1](#131-end-to-end-testing)             | **End-to-End Testing**              | Complete business workflows from beginning to end                   |
+| [1.3.2](#132-black-box-testing)              | **Black Box Testing**               | External behavior without knowledge of internal implementation      |
+| [1.3.3](#133-smoke-testing)                  | **Smoke Testing**                   | Critical functionality and build stability                          |
+| [1.3.4](#134-sanity-testing)                 | **Sanity Testing**                  | Focused validation after specific changes or fixes                  |
+| [1.3.5](#135-happy-path-testing)             | **Happy Path Testing**              | Successful workflows using valid inputs                             |
+| [1.3.6](#136-monkey-testing)                 | **Monkey Testing**                  | Random or unexpected inputs and user behavior                       |
+| [1.4](#14-acceptance-testing)                | **Acceptance Testing**              | Business acceptance and readiness for release                       |
+| [1.4.1](#141-alpha-testing)                  | **Alpha Testing**                   | Internal validation before external release                         |
+| [1.4.2](#142-beta-testing)                   | **Beta Testing**                    | Validation by selected external users                               |
+| [1.4.3](#143-operational-acceptance-testing) | **Operational Acceptance Testing**  | Operational readiness, maintainability, and support                 |
+| [2](#2-non-functional-testing)               | **Non-Functional Testing**          | Quality attributes such as performance, security, and usability     |
+| [2.1](#21-security-testing)                  | **Security Testing**                | Security controls, vulnerabilities, and protection mechanisms       |
+| [2.1.1](#211-penetration-testing)            | **Penetration Testing**             | Authorized security assessment through controlled attack simulation |
+| [2.2](#22-performance-testing)               | **Performance Testing**             | System behavior under different workloads                           |
+| [2.2.1](#221-load-testing)                   | **Load Testing**                    | Performance under expected workload                                 |
+| [2.2.2](#222-stress-testing)                 | **Stress Testing**                  | Behavior beyond expected capacity                                   |
+| [2.2.3](#223-scalability-testing)            | **Scalability Testing**             | Ability to handle increasing workload                               |
+| [2.2.4](#224-volume-testing)                 | **Volume Testing**                  | Handling of large volumes of data                                   |
+| [2.2.5](#225-endurance-testing)              | **Endurance Testing**               | Stability during sustained long-term workload                       |
+| [2.3](#23-usability-testing)                 | **Usability Testing**               | Ease of use, navigation, and user experience                        |
+| [2.3.1](#231-exploratory-testing)            | **Exploratory Testing**             | Simultaneous learning, test design, and execution                   |
+| [2.3.2](#232-cross-browser-testing)          | **Cross-Browser Testing**           | Consistent behavior across browsers and browser versions            |
+| [2.3.3](#233-accessibility-testing)          | **Accessibility Testing**           | Usability for people with different accessibility needs             |
+| [2.4](#24-compatibility-testing)             | **Compatibility Testing**           | Behavior across different environments and configurations           |
+| [3.1](#31-ad-hoc-testing)                    | **Ad-Hoc Testing**                  | Flexible, unscripted testing based on immediate needs               |
+| [3.2](#32-back-end--database-testing)        | **Back-End / Database Testing**     | Data integrity, database operations, and backend logic              |
+| [3.3](#33-browser-compatibility-testing)     | **Browser Compatibility Testing**   | Web application compatibility across browsers                       |
+| [3.4](#34-backward-compatibility-testing)    | **Backward Compatibility Testing**  | Compatibility with older versions, data, APIs, or formats           |
+| [3.5](#35-boundary-value-analysis)           | **Boundary Value Analysis**         | Values at and around input boundaries                               |
+| [3.6](#36-branch-testing)                    | **Branch Testing**                  | Execution of decision branches in source code                       |
+| [3.7](#37-comparison-testing)                | **Comparison Testing**              | Comparison against previous versions or alternatives                |
+| [3.8](#38-equivalence-partitioning)          | **Equivalence Partitioning**        | Testing representative values from equivalent input groups          |
+| [3.9](#39-example-based-testing)             | **Example-Based Testing**           | Validation using realistic examples and scenarios                   |
+| [3.10](#310-gui-testing)                     | **GUI Testing**                     | User interface behavior, appearance, and interaction                |
+| [3.11](#311-incremental-integration-testing) | **Incremental Integration Testing** | Gradual integration and validation of components                    |
+| [3.12](#312-installation-testing)            | **Installation Testing**            | Correct installation and post-installation behavior                 |
+| [3.13](#313-uninstallation-testing)          | **Uninstallation Testing**          | Correct removal of software and related components                  |
+| [3.14](#314-mutation-testing)                | **Mutation Testing**                | Evaluating the effectiveness of a test suite                        |
+| [3.15](#315-negative-testing)                | **Negative Testing**                | Behavior with invalid, unexpected, or incorrect input               |
+| [3.16](#316-recovery-testing)                | **Recovery Testing**                | System recovery after failures or interruptions                     |
+| [3.17](#317-regression-testing)              | **Regression Testing**              | Ensuring existing functionality remains unaffected by changes       |
+| [3.18](#318-risk-based-testing)              | **Risk-Based Testing**              | Prioritizing testing according to risk                              |
+| [3.19](#319-static-testing)                  | **Static Testing**                  | Finding defects without executing application code                  |
+| [3.20](#320-vulnerability-testing)           | **Vulnerability Testing**           | Identifying security weaknesses and vulnerabilities                 |
+
+
+---
+
+> **Note:** The classification of testing types and techniques can vary across organizations, testing methodologies, and industry references. Some techniques may overlap multiple testing categories depending on how they are applied.
+
 
 ---
 
