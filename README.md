@@ -1218,10 +1218,10 @@ A quick-reference guide to the testing types and techniques covered in this repo
 | -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------- |
 | [1](#1-functional-testing)                   | **Functional Testing**              | Verifies that software functions according to requirements          |
 | [1.1](#unit-testing)                      | **Unit Testing**                    | Individual functions, methods, classes, or components               |
-| [1.1.1](#1white-box-testing)              | **White Box Testing**               | Internal code structure, logic, and execution paths                 |
+| [1.1.1](#white-box-testing)              | **White Box Testing**               | Internal code structure, logic, and execution paths                 |
 | [1.1.2](#gorilla-testing)                | **Gorilla Testing**                 | Intensive testing of a specific module or functionality             |
 | [1.2](#12-integration-testing)               | **Integration Testing**             | Communication and interaction between components                    |
-| [1.2.1](#121-gray-box-testing)               | **Gray Box Testing**                | Testing with partial knowledge of internal implementation           |
+| [1.2.1](#gray-box-testing)               | **Gray Box Testing**                | Testing with partial knowledge of internal implementation           |
 | [1.3](#13-system-testing)                    | **System Testing**                  | Complete integrated system against requirements                     |
 | [1.3.1](#131-end-to-end-testing)             | **End-to-End Testing**              | Complete business workflows from beginning to end                   |
 | [1.3.2](#132-black-box-testing)              | **Black Box Testing**               | External behavior without knowledge of internal implementation      |
