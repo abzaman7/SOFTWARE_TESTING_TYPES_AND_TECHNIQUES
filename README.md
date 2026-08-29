@@ -1216,22 +1216,22 @@ A quick-reference guide to the testing types and techniques covered in this repo
 
 | #                                            | Testing Type / Technique            | Primary Focus                                                       |
 | -------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------- |
-| [1](#1-functional-testing)                   | **Functional Testing**              | Verifies that software functions according to requirements          |
+| [1](#functional-testing)                   | **Functional Testing**              | Verifies that software functions according to requirements          |
 | [1.1](#unit-testing)                      | **Unit Testing**                    | Individual functions, methods, classes, or components               |
 | [1.1.1](#white-box-testing)              | **White Box Testing**               | Internal code structure, logic, and execution paths                 |
 | [1.1.2](#gorilla-testing)                | **Gorilla Testing**                 | Intensive testing of a specific module or functionality             |
-| [1.2](#12-integration-testing)               | **Integration Testing**             | Communication and interaction between components                    |
+| [1.2](#integration-testing)               | **Integration Testing**             | Communication and interaction between components                    |
 | [1.2.1](#gray-box-testing)               | **Gray Box Testing**                | Testing with partial knowledge of internal implementation           |
-| [1.3](#13-system-testing)                    | **System Testing**                  | Complete integrated system against requirements                     |
-| [1.3.1](#131-end-to-end-testing)             | **End-to-End Testing**              | Complete business workflows from beginning to end                   |
-| [1.3.2](#132-black-box-testing)              | **Black Box Testing**               | External behavior without knowledge of internal implementation      |
-| [1.3.3](#133-smoke-testing)                  | **Smoke Testing**                   | Critical functionality and build stability                          |
-| [1.3.4](#134-sanity-testing)                 | **Sanity Testing**                  | Focused validation after specific changes or fixes                  |
-| [1.3.5](#135-happy-path-testing)             | **Happy Path Testing**              | Successful workflows using valid inputs                             |
-| [1.3.6](#136-monkey-testing)                 | **Monkey Testing**                  | Random or unexpected inputs and user behavior                       |
-| [1.4](#14-acceptance-testing)                | **Acceptance Testing**              | Business acceptance and readiness for release                       |
-| [1.4.1](#141-alpha-testing)                  | **Alpha Testing**                   | Internal validation before external release                         |
-| [1.4.2](#142-beta-testing)                   | **Beta Testing**                    | Validation by selected external users                               |
+| [1.3](#system-testing)                    | **System Testing**                  | Complete integrated system against requirements                     |
+| [1.3.1](#1end-to-end-testing)             | **End-to-End Testing**              | Complete business workflows from beginning to end                   |
+| [1.3.2](#black-box-testing)              | **Black Box Testing**               | External behavior without knowledge of internal implementation      |
+| [1.3.3](#smoke-testing)                  | **Smoke Testing**                   | Critical functionality and build stability                          |
+| [1.3.4](#sanity-testing)                 | **Sanity Testing**                  | Focused validation after specific changes or fixes                  |
+| [1.3.5](#happy-path-testing)             | **Happy Path Testing**              | Successful workflows using valid inputs                             |
+| [1.3.6](#monkey-testing)                 | **Monkey Testing**                  | Random or unexpected inputs and user behavior                       |
+| [1.4](#acceptance-testing)                | **Acceptance Testing**              | Business acceptance and readiness for release                       |
+| [1.4.1](#alpha-testing)                  | **Alpha Testing**                   | Internal validation before external release                         |
+| [1.4.2](#beta-testing)                   | **Beta Testing**                    | Validation by selected external users                               |
 | [1.4.3](#143-operational-acceptance-testing) | **Operational Acceptance Testing**  | Operational readiness, maintainability, and support                 |
 | [2](#2-non-functional-testing)               | **Non-Functional Testing**          | Quality attributes such as performance, security, and usability     |
 | [2.1](#21-security-testing)                  | **Security Testing**                | Security controls, vulnerabilities, and protection mechanisms       |
